@@ -1,0 +1,26 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="choc">
+
+  <a routerLink="/list1">
+    <h1 class="Pharmacie">Ma Pharmacie</h1>
+</a>
+<a routerLink="/login">
+  <h1 class="Pharmacie">Déconexion</h1>
+</a>
+
+  <a class="fancy-button"  (click)="goToCart()">
+    <i class="material-icons">shopping_cart</i>
+    Panier
+  </a>
+ </div>
+ <div class="products-container">
+  <h2>Products</h2>
+  <h2>Welcome, {{ user.firstname }} {{ user.lastname }}</h2>
+  <div *ngFor="let product of products" class="product-item">
+    <a  class="product-name">
+      {{ product.name }}
+    </a>
+    <button title="Ajouter au panier" class="add-to-cart-button" (click)="addToCart(product)">+</button>
+  </div>
+</div>
+

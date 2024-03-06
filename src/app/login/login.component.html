@@ -1,0 +1,33 @@
+<h1 class="entete">Ma Pharmacie</h1>
+
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+
+
+  <fieldset>
+    <legend>Connexion</legend>
+		
+		<label for="mail">E-Mail:</label>
+		<input type="text" name="email" id="mail" ngModel placeholder="me@exemple.com" required/>
+	<br/>
+		
+		
+		<label for="passwd">Mot de Passe:</label>
+		<input type="password" name="password" id="passwd" ngModel required/>
+
+    <input type="Submit" value="Connexion" name="Envoie" id="envoie" >
+
+  </fieldset>
+    
+      <br>
+      <br>
+      <a
+      [routerLink]="['']"
+     
+      >
+       <button class="button1" >Inscription</button>
+      </a>
+  
+  </form>
+
+  
+

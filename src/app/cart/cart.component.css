@@ -1,0 +1,145 @@
+/* Styles for the Material Icons font */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for the container of your heading and button */
+.choc1 {
+  width: 100%;
+  height: 68px; /* Ajustez si nécessaire pour une hauteur différente */
+  background-color: #19d228;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the heading "Ma Pharmacie" */
+.pharmacie1 {
+  color: white;
+  text-decoration: none; /* Supprime le soulignement par défaut des liens */
+}
+
+.pharmacie1 h1 {
+  font-size: 24px; /* Ajustez la taille de police si nécessaire */
+}
+
+/* Styles for your button */
+.fancy-button {
+  background-color: white;
+  color: #19d228;
+  border: 1px solid #19d228;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Enlève le soulignement du texte pour les liens */
+  font-weight: bold;
+  display: none; 
+ 
+}
+
+.fancy-button i.material-icons {
+  color: #19d228;
+  padding-right: 4px;
+  display: none; 
+}
+
+/* Styles for the button hover effect */
+.fancy-button:hover {
+  background-color: #19d228;
+  color: white;
+  display: none; 
+}
+
+.fancy-button:hover i.material-icons {
+  color: white;
+  display: none; 
+}
+
+/* Make sure the button and heading are vertically centered */
+.choc1 > a {
+  display: flex;
+  align-items: center;
+}
+
+.table-container {
+  margin-top: 300px; /* Ajustez la valeur comme nécessaire */
+  width: 180%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Assure que les enfants s'alignent en haut du conteneur */
+}
+
+
+
+/* Styling for the cart table and surrounding elements */
+.table-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  background-color: #fff;
+}
+
+button {
+  background-color: #19d228;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #17b125;
+}
+
+.validate-cart-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.validate-cart-button-container button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Empty cart message styling */
+p {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
